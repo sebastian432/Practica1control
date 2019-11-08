@@ -14,9 +14,9 @@ class Empleado
             Empleado(string,string,double salario=0);
             Empleado();
             ~Empleado();
-            string Obtener_nombre();
-            string Obtener_apellido();
-            double Obtener_salario();
+            void Obtener_nombre();
+            void Obtener_apellido();
+            void Obtener_salario();
             void Obtener_nombreApellido(string,string);
 };
 
@@ -40,18 +40,18 @@ Empleado::~Empleado()
 
 }
 
-string Empleado::Obtener_nombre()
+void Empleado::Obtener_nombre()
 {
     cout<<"El nombre del empleado es: "<<nombre<<endl;
 }
 
 
-string Empleado::Obtener_apellido()
+void Empleado::Obtener_apellido()
 {
     cout<<"El apellido del empleado es: "<<apellido<<endl;
 }
 
-double Empleado::Obtener_salario()
+void Empleado::Obtener_salario()
 {
     double anual,reduc,anual_red;
     if (salario<=0)
@@ -96,10 +96,9 @@ int main()
     p2.Obtener_apellido();
     p2.Obtener_salario();
 
-    /*
+/*
         int tam=3;
     Empleado lista[]={p3,p4,p5};
-
     for(int x=tam;tam>0;tam--){
         for(int a=0;a<x-1;a++){
             int i=static_cast<int>(lista[i].Obtener_apellido()[0]);
@@ -117,7 +116,7 @@ int main()
             }
         }
     }
-
 */
     return 0;
 }
+
