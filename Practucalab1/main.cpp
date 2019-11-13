@@ -89,7 +89,7 @@ int main()
     cout<<"cantidad alumnos: "<<c4.Obtener_cantidadAlumnos()<<endl;
     cout<<"Direccion del arreglo: "<<c4.Ob_direccion()<<endl<<endl;
 
-
+/*
         int tam=2;
     Empleado arr[]={p1,p2};
     for(int x=tam;tam>0;tam--){
@@ -115,6 +115,6 @@ int main()
 
     for (int i=0;i<tam;i++)
         cout << arr[i].Ob_apellido()<< endl;
-
+*/
     return 0;
 }
